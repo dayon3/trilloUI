@@ -57,9 +57,19 @@
 						/>
 						<span class="user-nav__user-name">Davis</span>
 						<div class="user-nav__user-menu">
-							<a href="#">Link 1</a>
-							<a href="#">Link 2</a>
-							<a href="#">Link 3</a>
+							<div class="user-nav__user-menu--head">
+								<p>Davis Gitonga</p>
+								<svg class="user-nav__user-menu--icon">
+									<use
+										xlink:href="img/sprite.svg#icon-switch"
+									></use>
+								</svg>
+								<span
+									class="user-nav__user-menu--icontext btn-inline"
+									>Logout</span
+								>
+							</div>
+							<div class="user-nav__user-menu--details"></div>
 						</div>
 					</div>
 				</nav>
@@ -73,6 +83,7 @@
 								<svg class="side-nav__icon">
 									<use
 										xlink:href="img/sprite.svg#icon-home"
+										key
 									></use>
 								</svg>
 								<span>Hotel</span>

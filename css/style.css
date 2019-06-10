@@ -123,18 +123,30 @@ body {
       position: absolute;
       top: 100%;
       left: -100%;
-      width: 200%;
+      width: 24.5rem;
+      padding: 2rem 0.5rem;
       background-color: var(--color-grey-light-2);
       box-shadow: var(--shadow-light);
       border: 1px solid var(--color-grey-dark-3);
       z-index: 1; }
-      .user-nav__user-menu a {
-        color: black;
-        padding: 1.2rem 1.6rem;
-        text-decoration: none;
-        display: block; }
-        .user-nav__user-menu a:hover {
-          background-color: #ddd; }
+      .user-nav__user-menu--head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid var(--color-grey-dark-3);
+        overflow: hidden;
+        padding-bottom: 2rem; }
+        .user-nav__user-menu--head p {
+          margin-right: auto; }
+        .user-nav__user-menu--head span {
+          text-transform: uppercase;
+          font-size: 0.85rem;
+          font-weight: 100; }
+      .user-nav__user-menu--icon {
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-right: 0.5rem;
+        fill: var(--color-primary); }
     .user-nav__user:hover .user-nav__user-menu {
       display: flex;
       flex-direction: column; }
