@@ -232,6 +232,44 @@ body {
   .gallery__photo {
     width: 100%;
     display: block; }
+  .gallery figure {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative; }
+    .gallery figure figcaption {
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      color: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 2rem; }
+  .gallery__effect-milo {
+    background: var(--color-primary); }
+  .gallery__effect-milo img {
+    width: 100%;
+    opacity: 1;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(1.12);
+    transform: scale(1.12);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden; }
+  .gallery__effect-milo:hover img {
+    opacity: 0.5;
+    -webkit-transform: scale(1);
+    transform: scale(1); }
+  .gallery__effect-milo p {
+    padding: 0 1rem 0 0;
+    width: 50%;
+    border-right: 1px solid #fff;
+    text-align: right;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s; }
+  .gallery__effect-milo:hover p {
+    opacity: 1; }
 
 .overview {
   display: flex;
